@@ -21,5 +21,9 @@ esptool.py --chip esp32 --port /dev/ttyUSB1 write_flash -z 0x1000 c:\users\tophe
 
 # The Motor FeatherWing
 
+Product details:
 https://learn.adafruit.com/adafruit-stepper-dc-motor-featherwing
+
+Micropython tutorial:
+https://learn.adafruit.com/micropython-hardware-pca9685-dc-motor-and-stepper-driver?view=all
 

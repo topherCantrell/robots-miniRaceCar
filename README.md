@@ -27,3 +27,4 @@ https://learn.adafruit.com/adafruit-stepper-dc-motor-featherwing
 Micropython tutorial:
 https://learn.adafruit.com/micropython-hardware-pca9685-dc-motor-and-stepper-driver?view=all
 
+Note this is the same chip and communication with the arduino board

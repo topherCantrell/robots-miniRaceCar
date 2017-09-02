@@ -18,3 +18,8 @@ C:\Python27\Scripts>esptool --port COM7 erase_flash
 
 esptool.py --chip esp32 --port /dev/ttyUSB1 write_flash -z 0x1000 c:\users\tophe\Desktop\esp32-20170902-v1.9.1-477-g75ead22c.bin
 ```
+
+# The Motor FeatherWing
+
+https://learn.adafruit.com/adafruit-stepper-dc-motor-featherwing
+

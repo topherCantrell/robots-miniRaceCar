@@ -19,6 +19,31 @@ C:\Python27\Scripts>esptool --port COM7 erase_flash
 esptool.py --chip esp32 --port /dev/ttyUSB1 write_flash -z 0x1000 c:\users\tophe\Desktop\esp32-20170902-v1.9.1-477-g75ead22c.bin
 ```
 
+# I2C on ESP32
+
+```
+from machine import Pin, I2C
+
+esp32i2cPins = {'sda': 23, 'scl': 22}
+frequency=100000
+
+sclPin=esp32i2cPins['scl']
+sdaPin=esp32i2cPins['sda']
+i2c = I2C(scl=Pin(sclPin), sda=Pin(sdaPin), freq = frequency)
+        
+devices = i2c.scan()
+print(devices)  
+
+# Talking to the MCP9808 temperature sensor
+
+address = 24
+temp_reg = 5
+res_reg = 8
+
+data = i2c.readfrom_mem(address, temp_reg, 2)
+print(data)
+```
+
 # The Motor FeatherWing
 
 Product details:

@@ -53,3 +53,27 @@ Micropython tutorial:
 https://learn.adafruit.com/micropython-hardware-pca9685-dc-motor-and-stepper-driver?view=all
 
 Note this is the same chip and communication with the arduino board
+
+```
+from machine import Pin, I2C
+
+esp32i2cPins = {'sda': 23, 'scl': 22}
+frequency=100000
+
+sclPin=esp32i2cPins['scl']
+sdaPin=esp32i2cPins['sda']
+i2c = I2C(scl=Pin(sclPin), sda=Pin(sdaPin), freq = frequency)
+
+import motor
+import time
+
+motors = motor.DCMotors(i2c)
+
+motors.speed(2,2000)
+motors.speed(3,2000)
+
+time.sleep(2)
+
+motors.brake(2)
+motors.brake(3)
+```

@@ -3,6 +3,8 @@ Based on the Adafruit MyMiniRaceCar
 
 [https://learn.adafruit.com/my-mini-race-car/how-your-robot-works-the-basics?view=all](https://learn.adafruit.com/my-mini-race-car/how-your-robot-works-the-basics?view=all)
 
+[https://www.pololu.com/product/961](https://www.pololu.com/product/961)
+
 # Installing microPython on the Huzzah32
 
 The came with a Bluefruit M0 microcontroller board. I replaced that with the ESP32 Huzzah board.
